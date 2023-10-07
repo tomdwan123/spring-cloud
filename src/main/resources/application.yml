@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: "dev"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 8081
+  
+---
+spring:
+  config:
+    activate:
+      on-profile: staging
+server:
+  port: 8082
+  
+---
+spring:
+  config:
+    activate:
+      on-profile: prd
+server:
+  port: 8083
